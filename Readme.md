@@ -1,5 +1,7 @@
 # 🚀 Terraform AWS VPC + EC2 Project
 
+![Infra](Networking.jpg)
+
 This project deploys a complete AWS networking setup using Terraform, including:
 
 - **VPC** (`12.0.0.0/16`)
@@ -149,6 +151,8 @@ aws dynamodb create-table   --table-name "${DDB_TABLE}"   --attribute-definition
 Ensure your `versions.tf` uses the same bucket/table.
 
 ---
+
+# 4.1 All aws cli command to create S3 bucket and create dynamo db table added in to "setup.ps1" file . Simply run from powershell "./setup.ps1"
 
 # ⚙️ 5. Configure terraform.tfvars
 

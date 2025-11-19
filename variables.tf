@@ -4,6 +4,12 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "resource_group" {
+  description = "Logical resource group name applied to all created resources as tags"
+  type        = string
+  default     = "tf-resource-group"
+}
+
 variable "vpc_cidr" {
   description = "VPC CIDR block"
   type        = string
@@ -37,7 +43,7 @@ variable "allowed_ssh_cidr" {
 variable "public_key_path" {
   description = "Path to your public key file on your local machine (used to create AWS keypair). Example: ~/.ssh/id_rsa.pub"
   type        = string
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "~/.ssh/ec2_key.pub"
 }
 
 variable "instance_ami_filters" {
